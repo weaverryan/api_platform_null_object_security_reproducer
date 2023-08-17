@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiProperty;
 use ApiPlatform\Metadata\ApiResource;
 use App\Repository\CakeRepository;
 use Doctrine\ORM\Mapping as ORM;
@@ -16,6 +17,7 @@ class Cake
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[ApiProperty(security: 'is_granted("FLAVOR", object)')]
     private ?string $flavor = null;
 
     public function getId(): ?int
