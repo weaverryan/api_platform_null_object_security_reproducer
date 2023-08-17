@@ -11,7 +11,11 @@ class FlavorVoter extends Voter
     {
         if ($attribute === 'FLAVOR') {
             dump($subject);
+
+            return true;
         }
+
+        return false;
     }
 
     protected function voteOnAttribute(string $attribute, mixed $subject, TokenInterface $token): bool
