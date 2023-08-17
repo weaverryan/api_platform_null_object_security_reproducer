@@ -79,6 +79,9 @@
         }
     },
     "require-dev": {
-        "symfony/maker-bundle": "^1.50"
+        "phpunit/phpunit": "^10.3",
+        "symfony/maker-bundle": "^1.50",
+        "zenstruck/browser": "^1.4",
+        "zenstruck/foundry": "^1.35"
     }
 }
